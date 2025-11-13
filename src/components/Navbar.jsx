@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className={`max-w-12 h-12 rounded-full overflow-hidden`}>
                 <img src="/miky-profile.jpg" alt="profile image" className="w-20" />
             </div>
-            <ul className={`flex gap-5`}>
+            <ul className={`md:flex gap-5 sm:hidden`}>
                 {
                     links.map((link, index) => {
                         return (
