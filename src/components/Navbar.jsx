@@ -1,4 +1,4 @@
-
+import { Menu, Dot} from "lucide-react";
 
 const Navbar = () => {
     const links = [
@@ -36,9 +36,22 @@ const Navbar = () => {
                     })
                 }
             </ul>
-            <a href="#" className="h-fit px-5 py-3 bg-white hover:bg-[#d0ff71] text-black rounded-3xl">
+            <a href="#" className="hidden md:block contact-btn  relative h-fit px-5 py-3 bg-white overflow-hidden hover:text-black z-10 text-black rounded-3xl ">
                 Contact
             </a>
+                <div className={`flex items-center gap-5 justify-center md:hidden`}>
+                    <p>Available for work</p>
+                    <div className={`relative`}>
+                        <div className={`w-2 h-2 rounded-full bg-green-400 absolute left-1/2 top-1/2 -translate-1/2`}></div>
+                        <div className={`w-2 h-2 rounded-full bg-green-400 absolute  left-1/2 top-1/2 -translate-1/2 blib-dot`}></div>
+                    </div>
+                </div>
+
+
+
+                <button className={`md:hidden p-3 bg-[#d0ff71] rounded-full`}>
+                    <Menu color={`black`}/>
+                </button>
             </div>
         </nav>
     )

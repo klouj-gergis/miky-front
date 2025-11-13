@@ -30,3 +30,49 @@
     background-color: #f9f9f9;
   }
 }
+
+.contact-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    background: #d0ff71;
+    z-index: -1;
+
+}
+
+.contact-btn:hover::before {
+    animation-name: fill-btn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.blib-dot{
+    animation-name: blib;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fill-btn {
+    100%{
+        width: 100%;
+        height: 100%;
+        border-radius: 1.5rem;
+    }
+}
+
+@keyframes blib {
+
+    100%{
+
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+}
