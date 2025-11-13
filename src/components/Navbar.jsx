@@ -68,7 +68,7 @@ const Navbar = () => {
                 {
                     links.map((link, index) => {
                         return (
-                            <li key={index} className={`hover:text-[#d0ff71] text-2xl`}>
+                            <li key={index} className={`hover:text-[#d0ff71] text-xl border-b border-black w-full text-center py-2`}>
                                 <a href={link.href}>{link.title}</a>
                             </li>
                         )
