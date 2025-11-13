@@ -1,4 +1,4 @@
-import { Menu, Dot} from "lucide-react";
+import { Menu, Dot, X} from "lucide-react";
 import { useState} from "react";
 
 const Navbar = () => {
@@ -59,7 +59,9 @@ const Navbar = () => {
 
 
                     <button className={`md:hidden p-3 bg-[#d0ff71] rounded-full`} onClick={toggleDropdown}>
-                        <Menu color={`black`}/>
+                        {
+                            isShown ? <X color={'black'} /> : <Menu color={`black`}/>
+                        }
                     </button>
                 </div>
                 <ul className={isShown ? 'flex flex-col w-full items-center mb-5 gap-5' : 'hidden'}>
