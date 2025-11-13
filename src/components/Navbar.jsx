@@ -28,7 +28,7 @@ const Navbar = () => {
 
     return (
         <nav className={`bg-transparent fixed z-100 `}>
-            <div className={`flex flex-col bg-[#0f0f0f]/50 border border-black rounded-4xl min-w-4/5 mt-5 fixed left-1/2 -translate-x-1/2 transition-all duration-1000`}>
+            <div className={`flex flex-col bg-[#0f0f0f]/50 border border-black rounded-4xl min-w-4/5 md:min-w-2/5 mt-5 fixed left-1/2 -translate-x-1/2 transition-all duration-1000`}>
                 <div className={`flex w-full py-2 justify-between gap-10 px-2  items-center transition-all duration-1000`}>
 
                 <div className={`max-w-12 h-12 rounded-full overflow-hidden`}>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 Contact
             </a>
                 <div className={`flex items-center gap-5 justify-center md:hidden ${isShown && "hidden"}`}>
-                    <p>Available for work</p>
+                    <p className={`text-sm`}>Available for work</p>
                     <div className={`relative`}>
                         <div className={`w-2 h-2 rounded-full bg-green-400 absolute left-1/2 top-1/2 -translate-1/2`}></div>
                         <div className={`w-2 h-2 rounded-full bg-green-400 absolute  left-1/2 top-1/2 -translate-1/2 blib-dot`}></div>
